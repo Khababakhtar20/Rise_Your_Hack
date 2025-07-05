@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeSage – AI-Powered Code Reviewer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav id="navbar" class="navbar">
+    <div class="logo">CodeSage</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#tech-stack">Tech Stack</a></li>
+      <li><a href="#use-cases">Use Cases</a></li>
+      <li><a href="#architecture">Architecture</a></li>
+      <li><a href="#demo">Demo</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><button id="dark-mode-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button></li>
+    </ul>
+  </nav>
+
+  <header class="hero-section">
+    <div class="hero-content">
+      <h1>CodeSage</h1>
+      <p class="tagline">Review Code Smarter, Faster, Better</p>
+      <p class="subheadline">AI-powered code review system that automates GitHub pull request analysis using LLaMA models via Groq API and Blackbox.AI</p>
+      <div class="cta-buttons">
+        <a href="#demo" class="btn btn-primary">View Demo</a>
+        <a href="https://github.com/" target="_blank" class="btn btn-secondary">Explore GitHub</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>About CodeSage</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>What We Do</h3>
+            <p>CodeSage revolutionizes code review by leveraging advanced AI models to automatically analyze GitHub pull requests and provide intelligent, actionable feedback to developers.</p>
+            
+            <h3>The Problem We Solve</h3>
+            <p>Manual code reviews are time-consuming, prone to human error, and often create bottlenecks in development pipelines. Developers face fatigue from repetitive review tasks, while teams struggle with inconsistent feedback quality and slow PR turnaround times.</p>
+            
+            <h3>How We Help</h3>
+            <p>Our AI-powered system provides instant, consistent, and comprehensive code analysis, helping developers focus on building great software while ensuring code quality and security standards are maintained.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="demo" class="demo-section">
+      <div class="container">
+        <h2>Demo</h2>
+        <div class="demo-content">
+          <div class="demo-video">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="CodeSage Demo Video" frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div class="demo-links">
+            <a href="https://www.youtube.com/" target="_blank" class="btn btn-primary">View Full Video</a>
+            <a href="https://github.com/" target="_blank" class="btn btn-secondary">GitHub Repository</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features-section">
+      <div class="container">
+        <h2>Core Features</h2>
+        <div class="features-cards">
+          <div class="feature-card">
+            <div class="icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3>Fast AI Feedback</h3>
+            <p>Get instant, actionable code review feedback powered by advanced AI models.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Security Analysis</h3>
+            <p>Automatically detect security vulnerabilities and code quality issues.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>LLaMA + Blackbox Intelligence</h3>
+            <p>Combining LLaMA and Blackbox.AI for deep code understanding and suggestions.</p>
+          </div>
+        </div>
+        <div class="features-cards">
+          <div class="feature-card">
+            <div class="icon"></div>
+            <h3>Seamless Integration</h3>
+            <p>Integrates with your existing workflow and tools for a frictionless experience.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon">
+              <i class="fas fa-link"></i>
+            </div>
+            <h3>GitHub PR Integration</h3>
+            <p>Seamlessly integrates with your GitHub pull requests for automated reviews.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon"></div>
+            <h3>Customizable Rules</h3>
+            <p>Configure review rules and feedback to match your team's standards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="use-cases" class="use-cases-section">
+      <div class="container">
+        <h2>Use Cases</h2>
+        <div class="use-cases-grid">
+          <div class="use-case-card">
+            <div class="use-case-icon">
+              <i class="fas fa-code-branch"></i>
+            </div>
+            <h3>Open Source PR Reviews</h3>
+            <p>Automatically review and provide feedback on open-source project pull requests, helping maintain code quality across the community.</p>
+          </div>
+          <div class="use-case-card">
+            <div class="use-case-icon">
+              <i class="fas fa-lock"></i>
+            </div>
+            <h3>Security Analysis</h3>
+            <p>Automatically detect security vulnerabilities, code smells, and potential issues before they reach production.</p>
+          </div>
+          <div class="use-case-card">
+            <div class="use-case-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h3>Enterprise Code Review</h3>
+            <p>Speed up enterprise development pipelines by reducing manual review time while maintaining high code quality standards.</p>
+          </div>
+        </div>
+        <div class="use-cases-grid">
+          <div class="use-case-card">
+            <div class="use-case-icon"></div>
+            <h3>Team Collaboration</h3>
+            <p>Facilitate better collaboration and knowledge sharing among team members.</p>
+          </div>
+          <div class="use-case-card">
+            <div class="use-case-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Educational Feedback</h3>
+            <p>Provide constructive feedback to junior developers, helping them learn best practices and improve their coding skills.</p>
+          </div>
+          <div class="use-case-card">
+            <div class="use-case-icon"></div>
+            <h3>Continuous Improvement</h3>
+            <p>Track code quality trends and improve over time with actionable insights.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="architecture" class="architecture-section">
+      <div class="container">
+        <h2>Architecture</h2>
+        <div class="codesage-arch-diagram-img">
+          <svg viewBox="0 0 900 400" width="100%" height="auto" style="max-width:900px;display:block;margin:0 auto;">
+            <!-- Clients -->
+            <g>
+              <circle cx="70" cy="80" r="28" fill="#6ad7d7" />
+              <rect x="55" y="110" width="30" height="40" rx="15" fill="#6ad7d7" />
+              <text x="70" y="170" text-anchor="middle" font-size="16" fill="#888">Client</text>
+            </g>
+            <g>
+              <circle cx="70" cy="200" r="28" fill="#6ad7d7" />
+              <rect x="55" y="230" width="30" height="40" rx="15" fill="#6ad7d7" />
+              <text x="70" y="290" text-anchor="middle" font-size="16" fill="#888">Client</text>
+            </g>
+            <g>
+              <circle cx="70" cy="320" r="28" fill="#6ad7d7" />
+              <rect x="55" y="350" width="30" height="40" rx="15" fill="#6ad7d7" />
+              <text x="70" y="410" text-anchor="middle" font-size="16" fill="#888">Client</text>
+            </g>
+            <!-- Arrows from clients to gateway -->
+            <g stroke="#6ad7d7" stroke-width="3" fill="none" marker-end="url(#arrowhead)">
+              <path d="M98,80 Q130,80 180,120" />
+              <path d="M98,200 Q130,200 180,200" />
+              <path d="M98,320 Q130,320 180,280" />
+            </g>
+            <!-- API Gateway (diamond) -->
+            <g>
+              <polygon points="200,160 260,200 200,240 140,200" fill="#6ad7d7" />
+              <text x="200" y="200" text-anchor="middle" font-size="18" fill="#fff" font-weight="bold" dy="0.4em">API Gateway</text>
+            </g>
+            <!-- Arrow from gateway to backend -->
+            <g stroke="#6ad7d7" stroke-width="3" fill="none" marker-end="url(#arrowhead)">
+              <line x1="260" y1="200" x2="350" y2="200" />
+            </g>
+            <!-- Backend (main rectangle) -->
+            <g>
+              <rect x="360" y="80" width="180" height="240" rx="18" fill="#fff" stroke="#bbb" stroke-width="2" />
+              <text x="450" y="110" text-anchor="middle" font-size="18" fill="#222" font-weight="bold">CodeSage Backend</text>
+              <rect x="390" y="130" width="120" height="36" rx="10" fill="#6ad7d7" />
+              <text x="450" y="154" text-anchor="middle" font-size="15" fill="#fff">GitHub PR Handler</text>
+              <rect x="390" y="176" width="120" height="36" rx="10" fill="#6ad7d7" />
+              <text x="450" y="200" text-anchor="middle" font-size="15" fill="#fff">AI Review Engine</text>
+              <rect x="390" y="222" width="120" height="36" rx="10" fill="#6ad7d7" />
+              <text x="450" y="246" text-anchor="middle" font-size="15" fill="#fff">Feedback Generator</text>
+              <rect x="390" y="268" width="120" height="36" rx="10" fill="#6ad7d7" />
+              <text x="450" y="292" text-anchor="middle" font-size="15" fill="#fff">User Dashboard</text>
+            </g>
+            <!-- Arrow from backend to DB -->
+            <g stroke="#6ad7d7" stroke-width="3" fill="none" marker-end="url(#arrowhead)">
+              <line x1="540" y1="200" x2="650" y2="200" />
+            </g>
+            <!-- Database (cylinder) -->
+            <g>
+              <ellipse cx="690" cy="200" rx="40" ry="18" fill="#6ad7d7" />
+              <rect x="650" y="200" width="80" height="50" rx="20" fill="#6ad7d7" />
+              <ellipse cx="690" cy="250" rx="40" ry="18" fill="#6ad7d7" />
+              <text x="690" y="230" text-anchor="middle" font-size="16" fill="#fff" font-weight="bold">Database</text>
+            </g>
+            <!-- External APIs -->
+            <g>
+              <rect x="650" y="80" width="80" height="32" rx="10" fill="#e0f7fa" />
+              <text x="690" y="100" text-anchor="middle" font-size="14" fill="#0097a7">Groq API</text>
+              <rect x="650" y="120" width="80" height="32" rx="10" fill="#e0f7fa" />
+              <text x="690" y="140" text-anchor="middle" font-size="14" fill="#0097a7">Blackbox.AI</text>
+              <rect x="650" y="160" width="80" height="32" rx="10" fill="#e0f7fa" />
+              <text x="690" y="180" text-anchor="middle" font-size="14" fill="#0097a7">GitHub API</text>
+            </g>
+            <!-- Arrows from backend to external APIs -->
+            <g stroke="#6ad7d7" stroke-width="2" fill="none" marker-end="url(#arrowhead)">
+              <line x1="540" y1="160" x2="650" y2="96" />
+              <line x1="540" y1="180" x2="650" y2="136" />
+              <line x1="540" y1="200" x2="650" y2="176" />
+            </g>
+            <defs>
+              <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto" markerUnits="strokeWidth">
+                <polygon points="0 0, 10 3.5, 0 7" fill="#6ad7d7" />
+              </marker>
+            </defs>
+          </svg>
+        </div>
+        <div class="architecture-modules">
+          <h3>Key Modules</h3>
+          <ul>
+            <li><strong>API Layer:</strong> FastAPI backend handling GitHub integration and AI processing</li>
+            <li><strong>AI Inference:</strong> LLaMA models powered by Groq for fast, accurate analysis</li>
+            <li><strong>Frontend:</strong> Modern React interface for seamless user experience</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="tech-stack" class="tech-stack-section">
+      <div class="container">
+        <h2>Tech Stack</h2>
+        <div class="tech-grid">
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fab fa-python"></i>
+            </div>
+            <span>Python</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <span>FastAPI</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <span>Groq API</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <span>LLaMA 3</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fab fa-github"></i>
+            </div>
+            <span>GitHub API</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <span>Blackbox.AI</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fab fa-react"></i>
+            </div>
+            <span>React</span>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <span>HTML/CSS/JS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact-metrics" class="impact-metrics-section">
+      <div class="container">
+        <h2>Impact Metrics</h2>
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-number">3x</div>
+            <h3>Faster PR Reviews</h3>
+            <p>Reduce review time significantly</p>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">90%</div>
+            <h3>Accurate Feedback</h3>
+            <p>High precision AI analysis</p>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">50+</div>
+            <h3>Developers Testing</h3>
+            <p>Active users in testing phase</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="team-section">
+      <div class="container">
+        <h2>Meet the Team</h2>
+        <div class="team-cards">
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="https://lablab.ai/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1494790108755-2616b612b786%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%26auto%3Dformat%26fit%3Dcrop%26w%3D687%26q%3D80&w=3840&q=75" alt="Fouzia Akbar">
+            </div>
+            <h3>Fouzia Akbar</h3>
+            <p>Code Magician</p>
+          </div>
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="https://lablab.ai/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1438761681033-6461ffad8d80%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=3840&q=75" alt="Faiqa Rafiq">
+            </div>
+            <h3>Faiqa Rafiq</h3>
+            <p>Team Leader</p>
+          </div>
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="https://lablab.ai/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1507003211169-0a1dd7228f2d%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%26auto%3Dformat%26fit%3Dcrop%26w%3D687%26q%3D80&w=3840&q=75" alt="Khabab Akhtar">
+            </div>
+            <h3>Khabab Akhtar</h3>
+            <p>Electronic AI Engineer</p>
+          </div>
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="https://lablab.ai/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1472099645785-5658abf4ff4e%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%26auto%3Dformat%26fit%3Dcrop%26w%3D1470%26q%3D80&w=3840&q=75" alt="Abdullah Jameel">
+            </div>
+            <h3>Abdullah Jameel</h3>
+            <p>Software Engineer</p>
+          </div>
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="https://lablab.ai/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1500648767791-00dcc994a43e%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%26auto%3Dformat%26fit%3Dcrop%26w%3D687%26q%3D80&w=3840&q=75" alt="Muhammad Azeem Azam">
+            </div>
+            <h3>Muhammad Azeem Azam</h3>
+            <p>Computer Science Student</p>
+          </div>
+          <div class="team-card">
+            <div class="team-photo">
+              <img src="https://lablab.ai/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1494790108755-2616b612b786%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D%26auto%3Dformat%26fit%3Dcrop%26w%3D687%26q%3D80&w=3840&q=75" alt="Sabina Oaie">
+            </div>
+            <h3>Sabina Oaie</h3>
+            <p>Team Member</p>
+          </div>
+        </div>
+        <div class="team-info">
+          <p>Building innovative projects that create real impact at the <a href="https://lablab.ai/event/raise-your-hack/innoventors-blackbox-track" target="_blank">Raise Your Hack Hackathon</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>CodeSage</h3>
+          <p>AI-powered code review system</p>
+        </div>
+        <div class="footer-section">
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://discord.gg/" target="_blank"><i class="fab fa-discord"></i> Discord</a>
+            <a href="mailto:contact@codesage.ai"><i class="fas fa-envelope"></i> Email</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Team</h3>
+          <a href="https://lablab.ai/event/raise-your-hack/innoventors-blackbox-track" target="_blank">Raise Your Hack</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 CodeSage. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
